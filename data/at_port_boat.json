@@ -1,1 +1,22 @@
-[{}]
+[
+    {
+        "boat_destination": "VALENCIA",
+        "boat_id": 23,
+        "boat_speed": 1
+    },
+    {
+        "boat_destination": "PALERMO",
+        "boat_id": 70,
+        "boat_speed": 0
+    },
+    {
+        "boat_destination": "PALERMO",
+        "boat_id": 11,
+        "boat_speed": 4
+    },
+    {
+        "boat_destination": "AMSTERDAM",
+        "boat_id": 95,
+        "boat_speed": 4
+    }
+]

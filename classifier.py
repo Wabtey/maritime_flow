@@ -5,8 +5,6 @@ import pika
 import json
 from typing import Optional
 
-at_port_boat = {}
-
 # defining what to do when a message is received
 def callback(ch, method, properties, body):
 
@@ -14,23 +12,27 @@ def callback(ch, method, properties, body):
 
     # decoding bytes into string and formatting into JSON
     inc_boat_str = body.decode('utf8').replace("'", '"')
-    inc_boat_json = json.loads(inc_boat_str)
+    inc_boat_dict = json.loads(inc_boat_str)
 
-    # match at_port_boat.get(inc_boat_json['boat_id']):
-    #     case None: at_port_boat.extend(inc_boat_json)
-    #     case Optional[boat]: 
-
-    at_port_boat_json = json.load(at_port_boat)
+    with open('data/at_port_boat.json', 'r') as data_file:    
+        # load the json into a `list of dict`
+        at_port_boat_list = json.load(data_file)
     
-    if inc_boat_json['boat_id'] in at_port_boat_json:
+    if inc_boat_dict['boat_id'] in at_port_boat_list:
         print("IN")
+        # update their value
+        at_port_boat_list[inc_boat_dict['boat_id']] = inc_boat_dict
     else:
         print("NOT IN")
-        at_port_boat_json.update(inc_boat_json)
-
+        # append the new boat into the file
+        at_port_boat_list.append(inc_boat_dict)
     # Check if a boat leaves a port/sea 
+        
+    with open('data/at_port_boat.json', 'w') as outfile:
+        json.dump(at_port_boat_list, outfile, indent=4, sort_keys=True)
 
-    print(json.dumps(at_port_boat_json, indent=4, sort_keys=True))
+    print(json.dumps(at_port_boat_list, indent=4, sort_keys=True))
+
         
 def main():
     
