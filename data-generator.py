@@ -6,6 +6,7 @@ from enum import Enum
 
 NB_BOATS = 100
 
+
 class Port(Enum):
     BREST = 1
     VALENCIA = 2
@@ -13,12 +14,13 @@ class Port(Enum):
     BRIGHTON = 4
     AMSTERDAM = 5
 
+
 class BoatSignal:
 
     def __init__(self, rnd):
-        self.boatId = rnd.randint(0,NB_BOATS)
+        self.boatId = rnd.randint(0, NB_BOATS)
         self.destination = rnd.choice(list(Port))
-        self.speed = rnd.randint(0,20)
+        self.speed = rnd.randint(0, 20)
 
     def getBoatId(self):
         return self.boatId
@@ -37,30 +39,33 @@ class BoatSignal:
 
         return d
 
+
 if __name__ == "__main__":
 
-    rnd = random.Random()
-    bs = BoatSignal(rnd)
-    d = bs.toDict()
+    for count in range(100):
+        rnd = random.Random()
+        bs = BoatSignal(rnd)
+        d = bs.toDict()
+        # d["boat_id"] = 23
 
-    # getting a connection to the broker
-    credentials = pika.PlainCredentials('guest', 'guest')
-    parameters = pika.ConnectionParameters(
-        'localhost', 5672, '/', credentials)
-    connection = pika.BlockingConnection(parameters)
-    channel = connection.channel()
+        # getting a connection to the broker
+        credentials = pika.PlainCredentials('guest', 'guest')
+        parameters = pika.ConnectionParameters(
+            'localhost', 5672, '/', credentials)
+        connection = pika.BlockingConnection(parameters)
+        channel = connection.channel()
 
-    # declaring the queue
-    channel.queue_declare(queue='Olf-boat_stream')
+        # declaring the queue
+        channel.queue_declare(queue='Olf-boat_stream')
 
-    # send the message, through the exchange ''
-    # which simply delivers to the queue having the key as name
-    # + our name to have unique key
-    channel.basic_publish(exchange='',
-                      routing_key='Olf-boat_stream',
-                      body=str(d))
+        # send the message, through the exchange ''
+        # which simply delivers to the queue having the key as name
+        # + our name to have unique key
+        channel.basic_publish(exchange='',
+                              routing_key='Olf-boat_stream',
+                              body=str(d))
 
-    print(" [x] Sent: " + str(d))
+        print(" [x] Sent: " + str(d))
 
-    # gently close (flush)
-    connection.close()
+        # gently close (flush)
+        connection.close()
