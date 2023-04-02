@@ -6,6 +6,8 @@ import json
 from typing import Optional
 
 # defining what to do when a message is received
+
+
 def callback(ch, method, properties, body):
 
     print(" [x] Received %r" % body)
@@ -13,25 +15,35 @@ def callback(ch, method, properties, body):
     # decoding bytes into string and formatting into JSON
     inc_boat_str = body.decode('utf8').replace("'", '"')
     inc_boat_dict = json.loads(inc_boat_str)
+    inc_boat_id = inc_boat_dict['boat_id']
 
-    with open('data/at_port_boat.json', 'r') as data_file:    
+    with open('data/at_port_boat.json', 'r') as data_file:
         # load the json into a `list of dict`
         at_port_boat_list = json.load(data_file)
-    
-    if inc_boat_dict['boat_id'] in at_port_boat_list:
-        print("IN")
-        # update their value
-        at_port_boat_list[inc_boat_dict['boat_id']] = inc_boat_dict
-    else:
+
+    inc_boat_is_present = False
+    # for docked_boat in at_port_boat_list:
+    for i, docked_boat in enumerate(at_port_boat_list):
+        if docked_boat["boat_id"] == inc_boat_id:
+            print("IN")
+            # update their value
+            at_port_boat_list[i] = inc_boat_dict
+            inc_boat_is_present = True
+            break
+
+    if not inc_boat_is_present:
         print("NOT IN")
-        # append the new boat into the file
+        # append the new boat into the list
         at_port_boat_list.append(inc_boat_dict)
-    # Check if a boat leaves a port/sea 
-        
+
+    # If a boat enters a port:
+    # - Check if its id exists in the at_sea_boat.json
+    # - if so remove from it
+
     with open('data/at_port_boat.json', 'w') as outfile:
         json.dump(at_port_boat_list, outfile, indent=4, sort_keys=True)
 
-    print(json.dumps(at_port_boat_list, indent=4, sort_keys=True))
+    # print(json.dumps(at_port_boat_list, indent=4, sort_keys=True))
 
 
 def main():
