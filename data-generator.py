@@ -44,8 +44,9 @@ if __name__ == "__main__":
     d = bs.toDict()
 
     # getting a connection to the broker
-    credentials = pika.PlainCredentials('zprojet', 'rabbit23')
-    parameters = pika.ConnectionParameters('rmqserver.istic.univ-rennes1.fr', 5672, '/', credentials)
+    credentials = pika.PlainCredentials('guest', 'guest')
+    parameters = pika.ConnectionParameters(
+        'localhost', 5672, '/', credentials)
     connection = pika.BlockingConnection(parameters)
     channel = connection.channel()
 

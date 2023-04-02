@@ -23,8 +23,12 @@ def callback(ch, method, properties, body):
     print(json.dumps(body_json, indent=4, sort_keys=True))
     
 def main():
-    credentials = pika.PlainCredentials('zprojet', 'rabbit23')
-    parameters = pika.ConnectionParameters('rmqserver.istic.univ-rennes1.fr', 5672, '/', credentials)
+    # credentials = pika.PlainCredentials('zprojet', 'rabbit23')
+    # parameters = pika.ConnectionParameters('rmqserver.istic.univ-rennes1.fr', 5672, '/', credentials)
+
+    credentials = pika.PlainCredentials('guest', 'guest')
+    parameters = pika.ConnectionParameters(
+        'localhost', 5672, '/', credentials)
     connection = pika.BlockingConnection(parameters)
     channel = connection.channel()
 
@@ -33,8 +37,8 @@ def main():
 
     # auto_ack: as soon as collected, a message is considered as acked
     channel.basic_consume(queue='Olf-at_sea_stream',
-                      auto_ack=True,
-                      on_message_callback=callback)
+                          auto_ack=True,
+                          on_message_callback=callback)
 
     # wait for messages
     print(' [*] Waiting for messages. To exit press CTRL+C')
