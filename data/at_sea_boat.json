@@ -1,467 +1,465 @@
 [
     {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 51,
-        "boat_speed": 10
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 73,
-        "boat_speed": 10
+        "boat_destination": "PALERMO",
+        "boat_id": 31,
+        "boat_list_speed": [
+            7,
+            13
+        ],
+        "boat_speed": 10.0
     },
     {
         "boat_destination": "VALENCIA",
-        "boat_id": 9,
-        "boat_speed": 20
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 67,
-        "boat_speed": 15
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 21,
-        "boat_speed": 20
-    },
-    {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 75,
+        "boat_id": 63,
+        "boat_list_speed": [
+            18
+        ],
         "boat_speed": 18
     },
     {
         "boat_destination": "PALERMO",
-        "boat_id": 71,
-        "boat_speed": 19
-    },
-    {
-        "boat_destination": "PALERMO",
-        "boat_id": 62,
-        "boat_speed": 5
-    },
-    {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 76,
-        "boat_speed": 6
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 52,
+        "boat_id": 49,
+        "boat_list_speed": [
+            7
+        ],
         "boat_speed": 7
     },
     {
-        "boat_destination": "VALENCIA",
-        "boat_id": 96,
-        "boat_speed": 16
+        "boat_destination": "PALERMO",
+        "boat_id": 17,
+        "boat_list_speed": [
+            15
+        ],
+        "boat_speed": 15
+    },
+    {
+        "boat_destination": "BRIGHTON",
+        "boat_id": 62,
+        "boat_list_speed": [
+            8,
+            12,
+            9,
+            11,
+            16
+        ],
+        "boat_speed": 11.2
+    },
+    {
+        "boat_destination": "AMSTERDAM",
+        "boat_id": 11,
+        "boat_list_speed": [
+            6
+        ],
+        "boat_speed": 6
     },
     {
         "boat_destination": "PALERMO",
-        "boat_id": 30,
+        "boat_id": 71,
+        "boat_list_speed": [
+            7
+        ],
+        "boat_speed": 7
+    },
+    {
+        "boat_destination": "BREST",
+        "boat_id": 3,
+        "boat_list_speed": [
+            14
+        ],
+        "boat_speed": 14
+    },
+    {
+        "boat_destination": "BREST",
+        "boat_id": 58,
+        "boat_list_speed": [
+            14,
+            8,
+            15
+        ],
+        "boat_speed": 12.333333333333334
+    },
+    {
+        "boat_destination": "VALENCIA",
+        "boat_id": 60,
+        "boat_list_speed": [
+            18,
+            7
+        ],
+        "boat_speed": 12.5
+    },
+    {
+        "boat_destination": "VALENCIA",
+        "boat_id": 75,
+        "boat_list_speed": [
+            5
+        ],
+        "boat_speed": 5
+    },
+    {
+        "boat_destination": "BREST",
+        "boat_id": 46,
+        "boat_list_speed": [
+            9
+        ],
+        "boat_speed": 9
+    },
+    {
+        "boat_destination": "PALERMO",
+        "boat_id": 94,
+        "boat_list_speed": [
+            10
+        ],
+        "boat_speed": 10
+    },
+    {
+        "boat_destination": "PALERMO",
+        "boat_id": 25,
+        "boat_list_speed": [
+            13
+        ],
+        "boat_speed": 13
+    },
+    {
+        "boat_destination": "BREST",
+        "boat_id": 86,
+        "boat_list_speed": [
+            18,
+            10,
+            8
+        ],
+        "boat_speed": 12.0
+    },
+    {
+        "boat_destination": "VALENCIA",
+        "boat_id": 92,
+        "boat_list_speed": [
+            9
+        ],
         "boat_speed": 9
     },
     {
         "boat_destination": "VALENCIA",
         "boat_id": 95,
-        "boat_speed": 9
+        "boat_list_speed": [
+            16,
+            18
+        ],
+        "boat_speed": 17.0
     },
     {
-        "boat_destination": "BREST",
-        "boat_id": 87,
-        "boat_speed": 5
-    },
-    {
-        "boat_destination": "PALERMO",
-        "boat_id": 26,
-        "boat_speed": 18
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 10,
-        "boat_speed": 5
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 70,
-        "boat_speed": 20
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 42,
-        "boat_speed": 15
-    },
-    {
-        "boat_destination": "PALERMO",
-        "boat_id": 41,
-        "boat_speed": 7
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 32,
-        "boat_speed": 18
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 43,
-        "boat_speed": 10
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 79,
-        "boat_speed": 18
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 99,
-        "boat_speed": 16
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 19,
-        "boat_speed": 18
-    },
-    {
-        "boat_destination": "PALERMO",
-        "boat_id": 64,
-        "boat_speed": 16
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 59,
+        "boat_destination": "AMSTERDAM",
+        "boat_id": 66,
+        "boat_list_speed": [
+            17
+        ],
         "boat_speed": 17
     },
     {
-        "boat_destination": "BREST",
-        "boat_id": 33,
-        "boat_speed": 18
+        "boat_destination": "BRIGHTON",
+        "boat_id": 30,
+        "boat_list_speed": [
+            16,
+            18
+        ],
+        "boat_speed": 17.0
+    },
+    {
+        "boat_destination": "BRIGHTON",
+        "boat_id": 79,
+        "boat_list_speed": [
+            7,
+            11
+        ],
+        "boat_speed": 9.0
     },
     {
         "boat_destination": "AMSTERDAM",
-        "boat_id": 98,
-        "boat_speed": 10
+        "boat_id": 96,
+        "boat_list_speed": [
+            6
+        ],
+        "boat_speed": 6
     },
     {
-        "boat_destination": "PALERMO",
-        "boat_id": 58,
-        "boat_speed": 10
+        "boat_destination": "VALENCIA",
+        "boat_id": 70,
+        "boat_list_speed": [
+            14
+        ],
+        "boat_speed": 14
+    },
+    {
+        "boat_destination": "AMSTERDAM",
+        "boat_id": 51,
+        "boat_list_speed": [
+            18,
+            15
+        ],
+        "boat_speed": 16.5
     },
     {
         "boat_destination": "BRIGHTON",
-        "boat_id": 4,
-        "boat_speed": 19
+        "boat_id": 38,
+        "boat_list_speed": [
+            19,
+            20
+        ],
+        "boat_speed": 19.5
+    },
+    {
+        "boat_destination": "VALENCIA",
+        "boat_id": 81,
+        "boat_list_speed": [
+            6,
+            8
+        ],
+        "boat_speed": 7.0
     },
     {
         "boat_destination": "BRIGHTON",
+        "boat_id": 44,
+        "boat_list_speed": [
+            7
+        ],
+        "boat_speed": 7
+    },
+    {
+        "boat_destination": "BRIGHTON",
+        "boat_id": 97,
+        "boat_list_speed": [
+            8,
+            5
+        ],
+        "boat_speed": 6.5
+    },
+    {
+        "boat_destination": "BRIGHTON",
+        "boat_id": 67,
+        "boat_list_speed": [
+            6
+        ],
+        "boat_speed": 6
+    },
+    {
+        "boat_destination": "BREST",
         "boat_id": 90,
+        "boat_list_speed": [
+            14,
+            10
+        ],
+        "boat_speed": 12.0
+    },
+    {
+        "boat_destination": "AMSTERDAM",
+        "boat_id": 65,
+        "boat_list_speed": [
+            20
+        ],
         "boat_speed": 20
     },
     {
         "boat_destination": "AMSTERDAM",
-        "boat_id": 72,
-        "boat_speed": 11
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 27,
-        "boat_speed": 5
-    },
-    {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 48,
-        "boat_speed": 14
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 57,
-        "boat_speed": 12
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 50,
-        "boat_speed": 18
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 47,
-        "boat_speed": 9
-    },
-    {
-        "boat_destination": "PALERMO",
-        "boat_id": 15,
-        "boat_speed": 6
-    },
-    {
-        "boat_destination": "PALERMO",
-        "boat_id": 45,
-        "boat_speed": 8
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 23,
-        "boat_speed": 11
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 13,
+        "boat_id": 43,
+        "boat_list_speed": [
+            8
+        ],
         "boat_speed": 8
     },
     {
         "boat_destination": "AMSTERDAM",
         "boat_id": 14,
+        "boat_list_speed": [
+            15
+        ],
         "boat_speed": 15
     },
     {
+        "boat_destination": "BREST",
+        "boat_id": 27,
+        "boat_list_speed": [
+            8,
+            13
+        ],
+        "boat_speed": 10.5
+    },
+    {
         "boat_destination": "AMSTERDAM",
-        "boat_id": 28,
+        "boat_id": 16,
+        "boat_list_speed": [
+            11
+        ],
         "boat_speed": 11
     },
     {
         "boat_destination": "BRIGHTON",
-        "boat_id": 83,
-        "boat_speed": 14
+        "boat_id": 12,
+        "boat_list_speed": [
+            17
+        ],
+        "boat_speed": 17
     },
     {
         "boat_destination": "BRIGHTON",
-        "boat_id": 78,
-        "boat_speed": 16
+        "boat_id": 59,
+        "boat_list_speed": [
+            12
+        ],
+        "boat_speed": 12
     },
     {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 39,
+        "boat_destination": "VALENCIA",
+        "boat_id": 55,
+        "boat_list_speed": [
+            19,
+            7
+        ],
+        "boat_speed": 13.0
+    },
+    {
+        "boat_destination": "BREST",
+        "boat_id": 48,
+        "boat_list_speed": [
+            8
+        ],
         "boat_speed": 8
     },
     {
-        "boat_destination": "VALENCIA",
-        "boat_id": 66,
-        "boat_speed": 18
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 16,
-        "boat_speed": 11
-    },
-    {
         "boat_destination": "AMSTERDAM",
-        "boat_id": 54,
-        "boat_speed": 18
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 31,
-        "boat_speed": 18
-    },
-    {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 37,
-        "boat_speed": 10
+        "boat_id": 89,
+        "boat_list_speed": [
+            7
+        ],
+        "boat_speed": 7
     },
     {
         "boat_destination": "PALERMO",
-        "boat_id": 65,
-        "boat_speed": 15
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 2,
-        "boat_speed": 6
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 68,
-        "boat_speed": 19
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 49,
-        "boat_speed": 6
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 6,
-        "boat_speed": 7
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 86,
-        "boat_speed": 11
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 44,
+        "boat_id": 50,
+        "boat_list_speed": [
+            16
+        ],
         "boat_speed": 16
     },
     {
-        "boat_destination": "BREST",
-        "boat_id": 55,
+        "boat_destination": "PALERMO",
+        "boat_id": 20,
+        "boat_list_speed": [
+            19
+        ],
         "boat_speed": 19
     },
     {
-        "boat_destination": "BREST",
-        "boat_id": 12,
-        "boat_speed": 17
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 56,
-        "boat_speed": 12
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 92,
-        "boat_speed": 7
-    },
-    {
         "boat_destination": "VALENCIA",
-        "boat_id": 53,
-        "boat_speed": 14
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 60,
-        "boat_speed": 7
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 84,
-        "boat_speed": 10
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 17,
-        "boat_speed": 5
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 80,
-        "boat_speed": 10
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 61,
-        "boat_speed": 12
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 1,
-        "boat_speed": 9
-    },
-    {
-        "boat_destination": "BRIGHTON",
         "boat_id": 0,
-        "boat_speed": 16
-    },
-    {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 18,
-        "boat_speed": 11
-    },
-    {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 97,
-        "boat_speed": 16
+        "boat_list_speed": [
+            7
+        ],
+        "boat_speed": 7
     },
     {
         "boat_destination": "VALENCIA",
-        "boat_id": 22,
-        "boat_speed": 17
+        "boat_id": 76,
+        "boat_list_speed": [
+            9
+        ],
+        "boat_speed": 9
     },
     {
-        "boat_destination": "PALERMO",
-        "boat_id": 40,
+        "boat_destination": "BRIGHTON",
+        "boat_id": 53,
+        "boat_list_speed": [
+            11,
+            8
+        ],
+        "boat_speed": 9.5
+    },
+    {
+        "boat_destination": "BREST",
+        "boat_id": 13,
+        "boat_list_speed": [
+            12
+        ],
         "boat_speed": 12
     },
     {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 88,
-        "boat_speed": 16
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 25,
-        "boat_speed": 20
-    },
-    {
         "boat_destination": "PALERMO",
-        "boat_id": 63,
-        "boat_speed": 5
+        "boat_id": 39,
+        "boat_list_speed": [
+            9
+        ],
+        "boat_speed": 9
     },
     {
-        "boat_destination": "BREST",
-        "boat_id": 91,
+        "boat_destination": "VALENCIA",
+        "boat_id": 32,
+        "boat_list_speed": [
+            7
+        ],
         "boat_speed": 7
     },
     {
         "boat_destination": "BRIGHTON",
-        "boat_id": 81,
-        "boat_speed": 9
+        "boat_id": 2,
+        "boat_list_speed": [
+            7
+        ],
+        "boat_speed": 7
     },
     {
         "boat_destination": "PALERMO",
-        "boat_id": 11,
-        "boat_speed": 19
-    },
-    {
-        "boat_destination": "AMSTERDAM",
-        "boat_id": 100,
-        "boat_speed": 12
+        "boat_id": 57,
+        "boat_list_speed": [
+            9,
+            14
+        ],
+        "boat_speed": 11.5
     },
     {
         "boat_destination": "BREST",
         "boat_id": 36,
-        "boat_speed": 20
-    },
-    {
-        "boat_destination": "BREST",
-        "boat_id": 20,
-        "boat_speed": 9
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 94,
-        "boat_speed": 9
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 35,
-        "boat_speed": 13
-    },
-    {
-        "boat_destination": "VALENCIA",
-        "boat_id": 93,
-        "boat_speed": 5
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 38,
-        "boat_speed": 17
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 8,
+        "boat_list_speed": [
+            13
+        ],
         "boat_speed": 13
     },
     {
         "boat_destination": "PALERMO",
-        "boat_id": 46,
-        "boat_speed": 12
+        "boat_id": 56,
+        "boat_list_speed": [
+            18
+        ],
+        "boat_speed": 18
     },
     {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 3,
-        "boat_speed": 5
+        "boat_destination": "BREST",
+        "boat_id": 61,
+        "boat_list_speed": [
+            16,
+            8
+        ],
+        "boat_speed": 12.0
     },
     {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 89,
-        "boat_speed": 11
-    },
-    {
-        "boat_destination": "BRIGHTON",
-        "boat_id": 85,
-        "boat_speed": 5
+        "boat_destination": "BREST",
+        "boat_id": 28,
+        "boat_list_speed": [
+            8
+        ],
+        "boat_speed": 8
     },
     {
         "boat_destination": "VALENCIA",
-        "boat_id": 34,
-        "boat_speed": 13
+        "boat_id": 52,
+        "boat_list_speed": [
+            8
+        ],
+        "boat_speed": 8
+    },
+    {
+        "boat_destination": "BRIGHTON",
+        "boat_id": 10,
+        "boat_list_speed": [
+            10
+        ],
+        "boat_speed": 10
     }
 ]

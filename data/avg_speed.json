@@ -1,0 +1,26 @@
+[
+    {
+        "avg_speed": 0,
+        "port_name": "GLOBAL"
+    },
+    {
+        "avg_speed": 0,
+        "port_name": "BREST"
+    },
+    {
+        "avg_speed": 0,
+        "port_name": "VALENCIA"
+    },
+    {
+        "avg_speed": 0,
+        "port_name": "PALERMO"
+    },
+    {
+        "avg_speed": 0,
+        "port_name": "BRIGHTON"
+    },
+    {
+        "avg_speed": 0,
+        "port_name": "AMSTERDAM"
+    }
+]
