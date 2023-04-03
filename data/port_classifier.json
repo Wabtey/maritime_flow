@@ -1,0 +1,22 @@
+[
+    {
+        "boat_count": 4,
+        "port_name": "BREST"
+    },
+    {
+        "boat_count": 1,
+        "port_name": "VALENCIA"
+    },
+    {
+        "boat_count": 5,
+        "port_name": "PALERMO"
+    },
+    {
+        "boat_count": 2,
+        "port_name": "BRIGHTON"
+    },
+    {
+        "boat_count": 7,
+        "port_name": "AMSTERDAM"
+    }
+]
