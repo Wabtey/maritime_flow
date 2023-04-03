@@ -5,6 +5,7 @@ import pika
 import json
 from typing import Optional
 
+
 def index_port(port):
     if port == "BREST":
         return 0
@@ -18,7 +19,7 @@ def index_port(port):
         return 4
     else:
         return -1
-    
+
 
 # defining what to do when a message is received
 
@@ -30,7 +31,7 @@ def callback(ch, method, properties, body):
     # decoding bytes into string and formatting into JSON
     inc_boat_str = body.decode('utf8').replace("'", '"')
     inc_boat_dict = json.loads(inc_boat_str)
-    
+
     # gathering boat's information
     inc_boat_id = inc_boat_dict['boat_id']
     inc_boat_port = inc_boat_dict['boat_destination']
@@ -53,10 +54,12 @@ def callback(ch, method, properties, body):
 
             # ---- Teleportion from another port ----
             # --- down the count in port_classifier_list ---
-            port_info = port_classifier_list[index_port(docked_boat["boat_destination"])]
+            port_info = port_classifier_list[index_port(
+                docked_boat["boat_destination"])]
             # port_info = { "port_name": "NAME", "boat_count": X }
             port_info['boat_count'] = port_info['boat_count'] - 1
-            port_classifier_list[index_port(docked_boat["boat_destination"])] = port_info
+            port_classifier_list[index_port(
+                docked_boat["boat_destination"])] = port_info
 
             # update their value (destination, speed)
             at_port_boat_list[i] = inc_boat_dict
@@ -74,13 +77,12 @@ def callback(ch, method, properties, body):
     port_info['boat_count'] = port_info['boat_count'] + 1
     port_classifier_list[index_port(inc_boat_port)] = port_info
 
-    # If a boat enters a port:
+    # TODO: If a boat enters a port:
     # - Check if its id exists in the at_sea_boat.json
     # - if so remove from it -------------------vvvvvv
 
     # FIXME: Two programs (avg-speed-estimator and classifier) writes into the same json
     # IDEA: ^^^^^^---- Build a new program which will manage these things ?
-
 
     # DEBUG: Dumping json with each message sometimes seems to cause the json to be completely deleted.
     with open('data/at_port_boat.json', 'w') as outfile:
@@ -88,7 +90,6 @@ def callback(ch, method, properties, body):
     with open('data/port_classifier.json', 'w') as outfile:
         json.dump(port_classifier_list, outfile, indent=4, sort_keys=True)
     # print(json.dumps(at_port_boat_list, indent=4, sort_keys=True))
-
 
 
 def main():

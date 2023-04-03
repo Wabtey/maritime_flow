@@ -7,6 +7,8 @@ import pika
 import json
 
 # defining what to do when a message is received
+
+
 def callback(ch, method, properties, body):
 
     print(" [x] Received %r" % body)
@@ -28,9 +30,11 @@ def callback(ch, method, properties, body):
             # --- update their value ---
             inc_boat_dict['boat_list_speed'] = sailing_boat['boat_list_speed']
             # add the new input speed
-            inc_boat_dict['boat_list_speed'].append(inc_boat_dict['boat_speed'])
+            inc_boat_dict['boat_list_speed'].append(
+                inc_boat_dict['boat_speed'])
             # update the speed avg
-            inc_boat_dict['boat_speed'] = sum(inc_boat_dict['boat_list_speed'])/len(inc_boat_dict['boat_list_speed'])
+            inc_boat_dict['boat_speed'] = sum(
+                inc_boat_dict['boat_list_speed'])/len(inc_boat_dict['boat_list_speed'])
             at_sea_boat_list[i] = inc_boat_dict
             inc_boat_is_present = True
             break
@@ -42,7 +46,7 @@ def callback(ch, method, properties, body):
         inc_boat_dict['boat_list_speed'] = [inc_boat_dict['boat_speed']]
         at_sea_boat_list.append(inc_boat_dict)
 
-    # If a boat enters the sea:
+    # TODO: If a boat enters the sea:
     # - Check if its id exists in the at_port_boat.json
     # - if so remove from it
 
@@ -50,8 +54,9 @@ def callback(ch, method, properties, body):
         json.dump(at_sea_boat_list, outfile, indent=4, sort_keys=True)
 
     # print(json.dumps(at_sea_boat_list, indent=4, sort_keys=True))
-    
+
     # TODO: feature - with avg_speed.json calculate boat speed for each destination
+
 
 def main():
     # credentials = pika.PlainCredentials('zprojet', 'rabbit23')
